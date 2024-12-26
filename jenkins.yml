@@ -1,6 +1,6 @@
 tasks:
     - name: Create Jenkins Job
-      community.general.jenkins_job:
+      jenkins_job:
         url: "http://localhost:8080"
         user: "admin"
         password: "admin"
@@ -24,7 +24,7 @@ tasks:
           </project>
 
     - name: Delete Jenkins Job
-      community.general.jenkins_job:
+      jenkins_job:
 	url: "http://localhost:8080"
 	user: "admin"
 	password: "admin"
